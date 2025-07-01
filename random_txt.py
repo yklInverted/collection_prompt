@@ -22,7 +22,7 @@ class RandomTextWindow:
         
         # 创建样式
         style = ttk.Style()
-        style.configure('Large.TLabel', font=('Arial', 100, 'bold'))
+        style.configure('Large.TLabel', font=('Arial', 80, 'bold'))
         
         # 创建标签显示文本
         self.text_label = ttk.Label(
@@ -97,7 +97,7 @@ class RandomTextWindow:
         """运行应用程序"""
         try:
             print("随机文本显示器已启动...")
-            print("文本列表:", self.text_list)
+            # print("文本列表:", self.text_list)
             print("按Ctrl+C或点击'退出'按钮关闭程序")
             self.root.mainloop()
         except KeyboardInterrupt:
