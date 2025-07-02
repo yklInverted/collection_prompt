@@ -91,7 +91,7 @@ class RandomTextWindow:
         """安排下一次更新"""
         self.update_text()
         # 2秒后再次调用
-        self.root.after(4000, self.schedule_update)
+        self.root.after(10000, self.schedule_update)
     
     def run(self):
         """运行应用程序"""
